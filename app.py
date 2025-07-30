@@ -25,7 +25,7 @@ with st.expander("Data"):
 
   st.write("More information about Data")
   inf = df.info()
-  print(inf)
+  st.text(inf)
   
 
 with st.expander("Data Visualization"):
