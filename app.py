@@ -33,7 +33,7 @@ with st.expander("Data Visualization"):
 
 
 
-with st.expander("Data Preperation"):
+
   
 
 with st.sidebar:
