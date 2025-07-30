@@ -8,3 +8,6 @@ st.info("This is end-to-end Machine Learning App")
 
 with st.expander("Data"):
   pass
+
+with st.expander("Data Visualization"):
+  pass
