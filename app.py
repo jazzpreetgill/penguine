@@ -34,7 +34,7 @@ with st.expander("Data Visualization"):
 
 
 with st.expander("Data Preperation"):
-  pass
+  
 
 with st.sidebar:
   st.header("Input Variables")
@@ -60,4 +60,17 @@ with st.expander("Input data"):
   input_df
   st.write("**Combined data**")
   input_penguins
+# One hot encoding for X
+encode = ['island','sex']
+df_penguins = pd.get_dummies(input_penguins, prefix = encode)
+X = df_penguins[1:]
+input_row = df_penguins[:1]
+# One hot encoding for y
+target_mapper = {
+  'Adelie': 0,
+  'Chinstrap': 1,
+  'Gentoo': 2
+}
+
+
   
