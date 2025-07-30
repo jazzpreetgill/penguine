@@ -1,4 +1,4 @@
-import pandas as pd
+ctboximport pandas as pd
 import streamlit as st
 import numpy as np
 from sklearn.ensemble import RandomForestClassifier
